@@ -13,7 +13,7 @@ In this workshop, you will:
 
 The architecture of the REST API looks like this
 
-![alt text](/static/images/diagrams/workshop-2--api-gateway--rest-api.drawio.svg)
+![alt text](/images/diagrams/workshop-2--api-gateway--rest-api.drawio.svg)
 
 {{% toc %}}
 
@@ -32,18 +32,18 @@ The architecture of the REST API looks like this
 - Open [APIs section](https://console.aws.amazon.com/apigateway/main/apis) of the API Gateway console.
 - Click `Create API`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--list-APIs.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--list-APIs.jpg)
 
 - In the `Choose an API type` page, under the `REST API` type, click `Build`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--create-type.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--create-type.jpg)
 
 - In the `Create REST API` page:
 
   - API name: fill in `UsersAPI`
   - Click `Create API`
 
-  ![alt text](/static/images/workshop-2/API-Gateway--create-detail.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--create-detail.jpg)
 
 ## Integrate API methods with Lambda functions
 
@@ -52,7 +52,7 @@ The architecture of the REST API looks like this
 - Open [APIs section](https://console.aws.amazon.com/apigateway/main/apis) of the API Gateway console.
 - In the list of the APIs, click on the name of the API (`UsersAPI`).
 
-  ![alt text](/static/images/workshop-2/API-Gateway--API-detail.png)
+  ![alt text](/images/workshop-2/API-Gateway--API-detail.png)
 
 - You will be redirected to the _Resources_ section of the `UsersAPI`.
 
@@ -64,7 +64,7 @@ The architecture of the REST API looks like this
 
 - Click `Create resource`
 
-  ![alt text](/static/images/workshop-2/API-Gateway--create-resource.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--create-resource.jpg)
 
 - In the `Create resource` page
 
@@ -72,12 +72,12 @@ The architecture of the REST API looks like this
   - For `Resource name`: Fill in `users`.
   - Click `Create resource`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-resource--create-resource-detail.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-resource--create-resource-detail.jpg)
 
 - Click on the `users` resource you've just created.
 - Click `Create method`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-GET-method--create-method.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-GET-method--create-method.jpg)
 
 - In the `Create method` page:
 
@@ -87,28 +87,28 @@ The architecture of the REST API looks like this
     - Integration type: Keep Lambda function.
     - Lambda function: Choose the `list-users` function.
 
-    ![alt text](/static/images/workshop-2/API-Gateway--users-GET-method--create-method-detail.jpg)
+    ![alt text](/images/workshop-2/API-Gateway--users-GET-method--create-method-detail.jpg)
 
   - Keep other settings as default.
 
   - Scroll to the bottom and click `Create method`.
 
-    ![alt text](/static/images/workshop-2/API-Gateway--users-GET-method--create-button.jpg)
+    ![alt text](/images/workshop-2/API-Gateway--users-GET-method--create-button.jpg)
 
 - You will be redirect to the detail of the `/users - GET` method.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-GET-method.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-GET-method.jpg)
 
 #### Test `/users - GET` method
 
 - Open the `Test` tab.
 - Click `Test`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-GET-method--test-tab.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-GET-method--test-tab.jpg)
 
 - Verify that the `list-users` Lambda function is invoked successfully, and the response has a list of users.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-GET-method--test-results.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-GET-method--test-results.jpg)
 
 ### Integrate `create-user` Lambda function as `/users - POST` method
 
@@ -116,7 +116,7 @@ The architecture of the REST API looks like this
 - Select `/users` resource.
 - Click `Create method`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-POST-method--create-method.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-POST-method--create-method.jpg)
 
 - In the `Create method` page:
 
@@ -126,7 +126,7 @@ The architecture of the REST API looks like this
     - Integration type: Keep Lambda function.
     - Lambda function: Choose the `create-user` function.
 
-    ![alt text](/static/images/workshop-2/API-Gateway--users-POST-method--create-method-detail.jpg)
+    ![alt text](/images/workshop-2/API-Gateway--users-POST-method--create-method-detail.jpg)
 
   - Keep other settings as default.
 
@@ -134,7 +134,7 @@ The architecture of the REST API looks like this
 
 - You will be redirect to the detail of the `/users - POST` method.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-POST-method--method-detail.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-POST-method--method-detail.jpg)
 
 - Open the `Test` tab.
 - In the Request body field, fill in:
@@ -150,11 +150,11 @@ The architecture of the REST API looks like this
 
 - Click `Test`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-POST-method--test-request.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-POST-method--test-request.jpg)
 
 - Verify that the `create-users` Lambda function is invoked successfully, and the response is the created user.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-POST-method--test-results.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-POST-method--test-results.jpg)
 
 ### Integrate `get-user` Lambda function as `/users/{userId} - GET` method
 
@@ -162,7 +162,7 @@ The architecture of the REST API looks like this
 - Select `/users` resource.
 - Click `Create resource`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId--create-resource.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId--create-resource.jpg)
 
 - In the `Create resource` page:
 
@@ -174,12 +174,12 @@ The architecture of the REST API looks like this
 
   - Click `Create resource`.
 
-    ![alt text](/static/images/workshop-2/API-Gateway--users-userId--create-resource-detail.jpg)
+    ![alt text](/images/workshop-2/API-Gateway--users-userId--create-resource-detail.jpg)
 
 - Click on the `/users/{userId}` resource you've just created.
 - Click `Create method`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-GET-method--create-method.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--create-method.jpg)
 
 - In the `Create method` page':
 
@@ -189,7 +189,7 @@ The architecture of the REST API looks like this
     - Integration type: Keep Lambda function.
     - Lambda function: Choose the `get-user` function.
 
-    ![alt text](/static/images/workshop-2/API-Gateway--users-userId-GET-method--create-method-detail.jpg)
+    ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--create-method-detail.jpg)
 
   - Keep other settings as default.
 
@@ -197,33 +197,33 @@ The architecture of the REST API looks like this
 
 - You will be redirect to the detail of the `/users/{userId} - GET` method.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-GET-method--method-detail.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--method-detail.jpg)
 
 - Open the `Integration request` tab.
 - In the `Integration request settings` section, click `Edit`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request.jpg)
 
 - In the `Edit integration request` page:
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request-detail.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request-detail.jpg)
 
   - Expand the `URL path parameters` section:
 
     - Click `Add path parameter`.
 
-      ![alt text](/static/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--URL-path-parameters.png)
+      ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--URL-path-parameters.png)
 
     - `Name`: Fill in `userId`.
     - `Mapped from`: Fill in `method.request.path.userId`.
 
-      ![alt text](/static/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--URL-path-parameters--userId.png)
+      ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--URL-path-parameters--userId.png)
 
   - Expand the `Mapping templates` section:
 
     - Click `Add mapping template`.
 
-      ![alt text](/static/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--mapping-template.png)
+      ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--mapping-template.png)
 
     - `Content type`: Fill in `application/json`.
     - `Template body`: Fill in:
@@ -234,7 +234,7 @@ The architecture of the REST API looks like this
       }
       ```
 
-      ![alt text](/static/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--mapping-template-body.png)
+      ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--mapping-template-body.png)
 
   - Scroll to the bottom, click `Save`.
 
@@ -248,11 +248,11 @@ The architecture of the REST API looks like this
 
 - Click `Test`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-GET-method--test-path.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--test-path.jpg)
 
 - Verify that the `get-user` Lambda function is invoked successfully, and the response is the data of the user.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-GET-method--test-results.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--test-results.jpg)
 
 ### Integrate `update-user` Lambda function as `/users/{userId} - PATCH` method
 
@@ -260,7 +260,7 @@ The architecture of the REST API looks like this
 - Select `/users/{userId}` resource.
 - Click `Create method`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-PATCH-method--create-method.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--create-method.jpg)
 
 - In the `Create method` page':
 
@@ -270,7 +270,7 @@ The architecture of the REST API looks like this
     - Integration type: Keep Lambda function.
     - Lambda function: Choose the `update-user` function.
 
-    ![alt text](/static/images/workshop-2/API-Gateway--users-userId-PATCH-method--create-method-detail.jpg)
+    ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--create-method-detail.jpg)
 
   - Keep other settings as default.
 
@@ -278,12 +278,12 @@ The architecture of the REST API looks like this
 
 - You will be redirect to the detail of the `/users/{userId} - PATCH` method.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-PATCH-method--method-detail.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--method-detail.jpg)
 
 - Open the `Integration request` tab.
 - In the `Integration request settings` section, click `Edit`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-PATCH-method--integration-request.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--integration-request.jpg)
 
 - In the `Edit integration request` page:
 
@@ -293,7 +293,7 @@ The architecture of the REST API looks like this
     - `Name`: Fill in `userId`.
     - `Mapped from`: Fill in `method.request.path.userId`.
 
-      ![alt text](/static/images/workshop-2/API-Gateway--users-userId-PATCH-method--integration-request--URL-path-parameters.png)
+      ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--integration-request--URL-path-parameters.png)
 
   - Expand the `Mapping templates` section:
 
@@ -313,7 +313,7 @@ The architecture of the REST API looks like this
       }
       ```
 
-      ![alt text](/static/images/workshop-2/API-Gateway--users-userId-PATCH-method--integration-request--mapping-template-body.png)
+      ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--integration-request--mapping-template-body.png)
 
   - Scroll to the bottom, click `Save`.
 
@@ -335,11 +335,11 @@ The architecture of the REST API looks like this
 
 - Click `Test`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-PATCH-method--test-request.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--test-request.jpg)
 
 - Verify that the `update-user` Lambda function is invoked successfully, and the response is the data of updated user.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-PATCH-method--test-results.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--test-results.jpg)
 
 ### Integrate `delete-user` Lambda function as `/users/{userId} - DELETE` method
 
@@ -347,7 +347,7 @@ The architecture of the REST API looks like this
 - Select `/users/{userId}` resource.
 - Click `Create method`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-DELETE-method--create-method.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--create-method.jpg)
 
 - In the `Create method` page':
 
@@ -357,7 +357,7 @@ The architecture of the REST API looks like this
     - Integration type: Keep Lambda function.
     - Lambda function: Choose the `delete-user` function.
 
-    ![alt text](/static/images/workshop-2/API-Gateway--users-userId-DELETE-method--create-method-detail.jpg)
+    ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--create-method-detail.jpg)
 
   - Keep other settings as default.
 
@@ -365,16 +365,16 @@ The architecture of the REST API looks like this
 
 - You will be redirect to the detail of the `/users/{userId} - DELETE` method.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-DELETE-method--method-detail.png)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--method-detail.png)
 
 - Open the `Integration request` tab.
 - In the `Integration request settings` section, click `Edit`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-DELETE-method--integration-request.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--integration-request.jpg)
 
 - In the `Edit integration request` page:
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-DELETE-method--integration-request-detail.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--integration-request-detail.jpg)
 
   - Expand the `URL path parameters` section:
 
@@ -396,7 +396,7 @@ The architecture of the REST API looks like this
       }
       ```
 
-      ![alt text](/static/images/workshop-2/API-Gateway--users-userId-DELETE-method--integration-request--URL-path-parameters-and-mapping-template-body.jpg)
+      ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--integration-request--URL-path-parameters-and-mapping-template-body.jpg)
 
   - Scroll to the bottom, click `Save`.
 
@@ -410,11 +410,11 @@ The architecture of the REST API looks like this
 
 - Click `Test`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-DELETE-method--test.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--test.jpg)
 
 - Verify that the `get-user` Lambda function is invoked successfully, and the response is the data of the user.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--users-userId-DELETE-method--test-results.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--test-results.jpg)
 
 ## Deploy the API
 
@@ -424,7 +424,7 @@ The architecture of the REST API looks like this
 
 - Click `Deploy API`
 
-  ![alt text](/static/images/workshop-2/API-Gateway--usersAPI--deploy-API.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--usersAPI--deploy-API.jpg)
 
 - In the _Deploy API_ popup.
 
@@ -432,12 +432,12 @@ The architecture of the REST API looks like this
   - Stage name: Fill in `dev`.
   - Click `Deploy`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--usersAPI--deploy-API--stage.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--usersAPI--deploy-API--stage.jpg)
 
 - You will be redirected to the `Stages` page of `UsersAPI`.
 - Copy the `Invoke URL` of `dev` stage.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--usersAPI--stage--invoke-URL.jpg)
+  ![alt text](/images/workshop-2/API-Gateway--usersAPI--stage--invoke-URL.jpg)
 
 ## Invoke the methods of REST API Gateway
 
@@ -512,7 +512,7 @@ The architecture of the REST API looks like this
     -X DELETE
   ```
 
-  ![alt text](/static/images/workshop-2/API-Gateway--invoke-REST-API-methods.png)
+  ![alt text](/images/workshop-2/API-Gateway--invoke-REST-API-methods.png)
 
 > [!TIP]
 > Now you can delete all the function URLs that have been created with your Lambda functions. The API Gateway can invoke these Lambda functions without the function URLs.
@@ -534,12 +534,12 @@ The AWS resource you need to cleanup in this workshop is the API Gateway:
 - In the list of the APIs, click on the name of the API (`UsersAPI`).
 - Click `Delete`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--delete-API.png)
+  ![alt text](/images/workshop-2/API-Gateway--delete-API.png)
 
 - Type in `confirm`
 - Click `Delete`.
 
-  ![alt text](/static/images/workshop-2/API-Gateway--delete-API-confirm.png)
+  ![alt text](/images/workshop-2/API-Gateway--delete-API-confirm.png)
 
 ## Summary
 
