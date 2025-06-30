@@ -34,23 +34,22 @@ After you deploy an API to a stage, it’s available for clients to invoke. You 
 
 ## Deploy the API to dev stage
 
-- Open [APIs section](https://console.aws.amazon.com/apigateway/main/apis) of the API Gateway console.
-- In the list of the APIs, click on the name of the API (`UsersAPI`).
-- You will be redirected to the _Resources_ section of the `UsersAPI`.
+1. Open [APIs section](https://console.aws.amazon.com/apigateway/main/apis) of the API Gateway console.
+2. In the list of the APIs, click on the name of the API (`UsersAPI`).
+3. You will be redirected to the _Resources_ section of the `UsersAPI`.
 
-- Click `Deploy API`
+4. Click `Deploy API`
 
-  ![alt text](/images/workshop-2/API-Gateway--usersAPI--deploy-API.jpg)
+![alt text](/images/workshop-2/API-Gateway--usersAPI--deploy-API.jpg)
 
-- In the _Deploy API_ popup.
+5. In the _Deploy API_ popup.
+   - State: Select `*New stage*`.
+   - Stage name: Fill in `dev`.
+   - Click `Deploy`.
 
-  - State: Select `*New stage*`.
-  - Stage name: Fill in `dev`.
-  - Click `Deploy`.
+![alt text](/images/workshop-2/API-Gateway--usersAPI--deploy-API--stage.jpg)
 
-  ![alt text](/images/workshop-2/API-Gateway--usersAPI--deploy-API--stage.jpg)
+6. You will be redirected to the `Stages` page of `UsersAPI`.
+7. Copy the `Invoke URL` of `dev` stage.
 
-- You will be redirected to the `Stages` page of `UsersAPI`.
-- Copy the `Invoke URL` of `dev` stage.
-
-  ![alt text](/images/workshop-2/API-Gateway--usersAPI--stage--invoke-URL.jpg)
+![alt text](/images/workshop-2/API-Gateway--usersAPI--stage--invoke-URL.jpg)

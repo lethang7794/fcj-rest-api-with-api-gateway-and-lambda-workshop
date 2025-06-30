@@ -36,7 +36,6 @@ pre: " <b> 6. </b> "
   ```
 
 - After integrate the Lambda functions to the API Gateway with the type of _REST API_, you invoke your Lambda functions via the API Gateway using:
-
   - the same URL (the _Invoke URL_ of the API and the stage)
   - different resource paths
   - different HTTP methods
@@ -76,7 +75,7 @@ pre: " <b> 6. </b> "
     -X DELETE
   ```
 
-  ![alt text](/images/workshop-2/API-Gateway--invoke-REST-API-methods.png)
+![alt text](/images/workshop-2/API-Gateway--invoke-REST-API-methods.png)
 
 > [!TIP]
 > Now you can delete all the function URLs that have been created with your Lambda functions. The API Gateway can invoke these Lambda functions without the function URLs.

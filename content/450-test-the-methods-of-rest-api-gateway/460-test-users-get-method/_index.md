@@ -5,11 +5,11 @@ chapter: false
 pre: " <b> 4.2 </b> "
 ---
 
-- Open the `Test` tab.
-- Click `Test`.
+1. Open the `Test` tab.
+2. Click `Test`.
 
-  ![alt text](/images/workshop-2/API-Gateway--users-GET-method--test-tab.jpg)
+![alt text](/images/workshop-2/API-Gateway--users-GET-method--test-tab.jpg)
 
-- Verify that the `list-users` Lambda function is invoked successfully, and the response has a list of users.
+3. Verify that the `list-users` Lambda function is invoked successfully, and the response has a list of users.
 
-  ![alt text](/images/workshop-2/API-Gateway--users-GET-method--test-results.jpg)
+![alt text](/images/workshop-2/API-Gateway--users-GET-method--test-results.jpg)

@@ -5,10 +5,10 @@ chapter: false
 pre: " <b> 4.4 </b> "
 ---
 
-- Click `Test`.
+1. Click `Test`.
 
-  ![alt text](/images/workshop-2/API-Gateway--users-POST-method--test-request.jpg)
+![alt text](/images/workshop-2/API-Gateway--users-POST-method--test-request.jpg)
 
-- Verify that the `create-users` Lambda function is invoked successfully, and the response is the created user.
+2. Verify that the `create-users` Lambda function is invoked successfully, and the response is the created user.
 
-  ![alt text](/images/workshop-2/API-Gateway--users-POST-method--test-results.jpg)
+![alt text](/images/workshop-2/API-Gateway--users-POST-method--test-results.jpg)
