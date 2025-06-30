@@ -1,5 +1,5 @@
 ---
-title: "TODO: Section 4 - title"
+title: "Integrate API methods with Lambda functions"
 weight: 4
 chapter: false
 pre: " <b> 4. </b> "

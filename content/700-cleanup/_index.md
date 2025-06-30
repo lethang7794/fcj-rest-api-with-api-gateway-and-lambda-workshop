@@ -1,8 +1,8 @@
 +++
 title = "Cleanup"
-weight = 9
+weight = 7
 chapter = false
-pre = "<b>9. </b>"
+pre = "<b>7. </b>"
 # TODO: Update cleanup section number
 +++
 

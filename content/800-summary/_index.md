@@ -1,5 +1,5 @@
 ---
-title: "TODO: Section 8 - title"
+title: "Summary"
 weight: 8
 chapter: false
 pre: " <b> 8. </b> "
