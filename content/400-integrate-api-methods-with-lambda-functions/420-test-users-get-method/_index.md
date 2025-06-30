@@ -5,6 +5,11 @@ chapter: false
 pre: " <b> 4.2 </b> "
 ---
 
-### TODO: Section 4.2 - heading
+- Open the `Test` tab.
+- Click `Test`.
 
-TODO: Section 4.2 - content
+  ![alt text](/images/workshop-2/API-Gateway--users-GET-method--test-tab.jpg)
+
+- Verify that the `list-users` Lambda function is invoked successfully, and the response has a list of users.
+
+  ![alt text](/images/workshop-2/API-Gateway--users-GET-method--test-results.jpg)

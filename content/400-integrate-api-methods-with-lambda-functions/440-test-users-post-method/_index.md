@@ -5,6 +5,10 @@ chapter: false
 pre: " <b> 4.4 </b> "
 ---
 
-### TODO: Section 4.4 - heading
+- Click `Test`.
 
-TODO: Section 4.4 - content
+  ![alt text](/images/workshop-2/API-Gateway--users-POST-method--test-request.jpg)
+
+- Verify that the `create-users` Lambda function is invoked successfully, and the response is the created user.
+
+  ![alt text](/images/workshop-2/API-Gateway--users-POST-method--test-results.jpg)
