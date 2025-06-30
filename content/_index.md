@@ -4,7 +4,7 @@ weight: 1
 chapter: false
 ---
 
-# Workshop 2: Building REST APIs with Amazon API Gateway and AWS Lambda
+# Building REST APIs with Amazon API Gateway and AWS Lambda
 
 In this workshop, you will:
 
@@ -14,19 +14,3 @@ In this workshop, you will:
 The architecture of the REST API looks like this
 
 ![alt text](/images/diagrams/workshop-2--api-gateway--rest-api.drawio.svg)
-
-{{% toc %}}
-
-## Introduction
-
-## Create REST API Gateway
-
-## Integrate API methods with Lambda functions
-
-## Deploy the API
-
-## Invoke the methods of REST API Gateway
-
-## Cleanup
-
-## Summary
