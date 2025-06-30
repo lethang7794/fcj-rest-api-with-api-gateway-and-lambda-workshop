@@ -1,5 +1,5 @@
 ---
-title: "Test `/users/{userId} - DELETE` method"
+title: "Test /users/{userId} - DELETE method"
 weight: 10
 chapter: false
 pre: " <b> 4.10 </b> "

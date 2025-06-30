@@ -1,5 +1,5 @@
 ---
-title: "Test `/users/{userId} - GET` method"
+title: "Test /users/{userId} - GET method"
 weight: 6
 chapter: false
 pre: " <b> 4.6 </b> "

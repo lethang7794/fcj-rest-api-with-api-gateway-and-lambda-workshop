@@ -1,5 +1,5 @@
 ---
-title: "Test `/users/{userId} - PATCH` method"
+title: "Test /users/{userId} - PATCH method"
 weight: 8
 chapter: false
 pre: " <b> 4.8 </b> "
