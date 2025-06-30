@@ -5,52 +5,45 @@ chapter: false
 pre: " <b> 4.1 </b> "
 ---
 
-- Open [APIs section](https://console.aws.amazon.com/apigateway/main/apis) of the API Gateway console.
-- In the list of the APIs, click on the name of the API (`UsersAPI`).
+1. Open [APIs section](https://console.aws.amazon.com/apigateway/main/apis) of the API Gateway console.
+2. In the list of the APIs, click on the name of the API (`UsersAPI`).
 
-  ![alt text](/images/workshop-2/API-Gateway--API-detail.png)
+![alt text](/images/workshop-2/API-Gateway--API-detail.png)
 
-- You will be redirected to the _Resources_ section of the `UsersAPI`.
+3. You will be redirected to the _Resources_ section of the `UsersAPI`.
 
 > [!TIP]
-> After you create an API, you will be automatically redirected
->
-> - from the _APIs_ section of the API Gateway
-> - to the _Resources_ section of that API (e.g. `API: UsersAPI`).
+> After you create an API, you will be automatically redirected from the _APIs_ section of the API Gateway to the _Resources_ section of that API (e.g. `API: UsersAPI`).
 
-- Click `Create resource`
+4. Click `Create resource`
 
-  ![alt text](/images/workshop-2/API-Gateway--create-resource.jpg)
+![alt text](/images/workshop-2/API-Gateway--create-resource.jpg)
 
-- In the `Create resource` page
+5. In the `Create resource` page
+   - For `Resource path`: Choose `/`
+   - For `Resource name`: Fill in `users`.
+   - Click `Create resource`.
 
-  - For `Resource path`: Choose `/`
-  - For `Resource name`: Fill in `users`.
-  - Click `Create resource`.
+![alt text](/images/workshop-2/API-Gateway--users-resource--create-resource-detail.jpg)
 
-  ![alt text](/images/workshop-2/API-Gateway--users-resource--create-resource-detail.jpg)
+6. Click on the `users` resource you've just created.
+7. Click `Create method`.
 
-- Click on the `users` resource you've just created.
-- Click `Create method`.
+![alt text](/images/workshop-2/API-Gateway--users-GET-method--create-method.jpg)
 
-  ![alt text](/images/workshop-2/API-Gateway--users-GET-method--create-method.jpg)
+8. In the `Create method` page:
+   - In `Method details` section:
+     - `Method type`: Select `GET`.
+     - Integration type: Keep Lambda function.
+     - Lambda function: Choose the `list-users` function.
 
-- In the `Create method` page:
+![alt text](/images/workshop-2/API-Gateway--users-GET-method--create-method-detail.jpg)
 
-  - In `Method details` section:
+9. Keep other settings as default.
+   - Scroll to the bottom and click `Create method`.
 
-    - `Method type`: Select `GET`.
-    - Integration type: Keep Lambda function.
-    - Lambda function: Choose the `list-users` function.
+![alt text](/images/workshop-2/API-Gateway--users-GET-method--create-button.jpg)
 
-    ![alt text](/images/workshop-2/API-Gateway--users-GET-method--create-method-detail.jpg)
+10. You will be redirect to the detail of the `/users - GET` method.
 
-  - Keep other settings as default.
-
-  - Scroll to the bottom and click `Create method`.
-
-    ![alt text](/images/workshop-2/API-Gateway--users-GET-method--create-button.jpg)
-
-- You will be redirect to the detail of the `/users - GET` method.
-
-  ![alt text](/images/workshop-2/API-Gateway--users-GET-method.jpg)
+![alt text](/images/workshop-2/API-Gateway--users-GET-method.jpg)

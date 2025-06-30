@@ -5,50 +5,42 @@ chapter: false
 pre: " <b> 4.9 </b> "
 ---
 
-- Go back to the _Resources_ section of the `UsersAPI` API in API Gateway console.
-- Select `/users/{userId}` resource.
-- Click `Create method`.
+1. Go back to the _Resources_ section of the `UsersAPI` API in API Gateway console.
+2. Select `/users/{userId}` resource.
+3. Click `Create method`.
 
-  ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--create-method.jpg)
+![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--create-method.jpg)
 
-- In the `Create method` page':
+4. In the `Create method` page - `Method details` section:
+   - `Method type`: Select `DELETE`.
+   - Integration type: Keep Lambda function.
+   - Lambda function: Choose the `delete-user` function.
 
-  - In `Method details` section:
+![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--create-method-detail.jpg)
 
-    - `Method type`: Select `DELETE`.
-    - Integration type: Keep Lambda function.
-    - Lambda function: Choose the `delete-user` function.
+5.  Keep other settings as default.
+    - Scroll to the bottom and click `Create method`.
 
-    ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--create-method-detail.jpg)
+6.  You will be redirect to the detail of the `/users/{userId} - DELETE` method.
 
-  - Keep other settings as default.
+![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--method-detail.png)
 
-  - Scroll to the bottom and click `Create method`.
+7. Open the `Integration request` tab.
+8. In the `Integration request settings` section, click `Edit`.
 
-- You will be redirect to the detail of the `/users/{userId} - DELETE` method.
+![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--integration-request.jpg)
 
-  ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--method-detail.png)
+9. In the `Edit integration request` page:
 
-- Open the `Integration request` tab.
-- In the `Integration request settings` section, click `Edit`.
+![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--integration-request-detail.jpg)
 
-  ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--integration-request.jpg)
-
-- In the `Edit integration request` page:
-
-  ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--integration-request-detail.jpg)
-
-  - Expand the `URL path parameters` section:
-
+10. Expand the `URL path parameters` section:
     - Click `Add path parameter`.
-
     - `Name`: Fill in `userId`.
     - `Mapped from`: Fill in `method.request.path.userId`.
 
-  - Expand the `Mapping templates` section:
-
+11. Expand the `Mapping templates` section:
     - Click `Add mapping template`.
-
     - `Content type`: Fill in `application/json`.
     - `Template body`: Fill in:
 
@@ -58,6 +50,6 @@ pre: " <b> 4.9 </b> "
       }
       ```
 
-      ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--integration-request--URL-path-parameters-and-mapping-template-body.jpg)
+![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--integration-request--URL-path-parameters-and-mapping-template-body.jpg)
 
-  - Scroll to the bottom, click `Save`.
+12. Scroll to the bottom, click `Save`.

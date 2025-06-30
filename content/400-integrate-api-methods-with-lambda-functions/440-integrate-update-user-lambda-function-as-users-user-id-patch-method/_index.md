@@ -5,50 +5,40 @@ chapter: false
 pre: " <b> 4.7 </b> "
 ---
 
+1. Go back to the _Resources_ section of the `UsersAPI` API in API Gateway console.
+2. Select `/users/{userId}` resource.
+3. Click `Create method`.
 
-- Go back to the _Resources_ section of the `UsersAPI` API in API Gateway console.
-- Select `/users/{userId}` resource.
-- Click `Create method`.
+![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--create-method.jpg)
 
-  ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--create-method.jpg)
+4. In the `Create method` page - `Method details` section:
+   - `Method type`: Select `UPDATE`.
+   - Integration type: Keep Lambda function.
+   - Lambda function: Choose the `update-user` function.
 
-- In the `Create method` page':
+![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--create-method-detail.jpg)
 
-  - In `Method details` section:
+5. Keep other settings as default.
+   - Scroll to the bottom and click `Create method`.
 
-    - `Method type`: Select `UPDATE`.
-    - Integration type: Keep Lambda function.
-    - Lambda function: Choose the `update-user` function.
+6. You will be redirect to the detail of the `/users/{userId} - PATCH` method.
 
-    ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--create-method-detail.jpg)
+![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--method-detail.jpg)
 
-  - Keep other settings as default.
+7. Open the `Integration request` tab.
+8. In the `Integration request settings` section, click `Edit`.
 
-  - Scroll to the bottom and click `Create method`.
+![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--integration-request.jpg)
 
-- You will be redirect to the detail of the `/users/{userId} - PATCH` method.
+9. In the `Edit integration request` page, expand the `URL path parameters` section:
+   - Click `Add path parameter`.
+   - `Name`: Fill in `userId`.
+   - `Mapped from`: Fill in `method.request.path.userId`.
 
-  ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--method-detail.jpg)
+![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--integration-request--URL-path-parameters.png)
 
-- Open the `Integration request` tab.
-- In the `Integration request settings` section, click `Edit`.
-
-  ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--integration-request.jpg)
-
-- In the `Edit integration request` page:
-
-  - Expand the `URL path parameters` section:
-
-    - Click `Add path parameter`.
-    - `Name`: Fill in `userId`.
-    - `Mapped from`: Fill in `method.request.path.userId`.
-
-      ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--integration-request--URL-path-parameters.png)
-
-  - Expand the `Mapping templates` section:
-
+10. Expand the `Mapping templates` section:
     - Click `Add mapping template`.
-
     - `Content type`: Fill in `application/json`.
     - `Template body`: Fill in:
 
@@ -63,6 +53,6 @@ pre: " <b> 4.7 </b> "
       }
       ```
 
-      ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--integration-request--mapping-template-body.png)
+![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--integration-request--mapping-template-body.png)
 
-  - Scroll to the bottom, click `Save`.
+11. Scroll to the bottom, click `Save`.

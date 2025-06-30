@@ -5,36 +5,36 @@ chapter: false
 pre: " <b> 4.3 </b> "
 ---
 
-- Go back to the _Resources_ section of the `UsersAPI` API in API Gateway console.
-- Select `/users` resource.
-- Click `Create method`.
+1. Go back to the _Resources_ section of the `UsersAPI` API in API Gateway console.
+2. Select `/users` resource.
+3. Click `Create method`.
 
-  ![alt text](/images/workshop-2/API-Gateway--users-POST-method--create-method.jpg)
+      ![alt text](/images/workshop-2/API-Gateway--users-POST-method--create-method.jpg)
 
-- In the `Create method` page:
+4. In the `Create method` page:
 
-  - In `Method details` section:
+      - In `Method details` section:
 
-    - `Method type`: Select `POST`.
-    - Integration type: Keep Lambda function.
-    - Lambda function: Choose the `create-user` function.
+        - `Method type`: Select `POST`.
+        - Integration type: Keep Lambda function.
+        - Lambda function: Choose the `create-user` function.
 
-    ![alt text](/images/workshop-2/API-Gateway--users-POST-method--create-method-detail.jpg)
+        ![alt text](/images/workshop-2/API-Gateway--users-POST-method--create-method-detail.jpg)
 
-  - Keep other settings as default.
+5. Keep other settings as default.
 
-  - Scroll to the bottom and click `Create method`.
+   - Scroll to the bottom and click `Create method`.
 
-- You will be redirect to the detail of the `/users - POST` method.
+6. You will be redirect to the detail of the `/users - POST` method.
 
-  ![alt text](/images/workshop-2/API-Gateway--users-POST-method--method-detail.jpg)
+      ![alt text](/images/workshop-2/API-Gateway--users-POST-method--method-detail.jpg)
 
-- Open the `Test` tab.
-- In the Request body field, fill in:
+7. Open the `Test` tab.
+8. In the Request body field, fill in:
 
-  ```json
-  {
-    "email": "tranvana@gmail.com",
-    "name": "Tran Van A"
-  }
-  ```
+      ```json
+      {
+        "email": "tranvana@gmail.com",
+        "name": "Tran Van A"
+      }
+      ```
