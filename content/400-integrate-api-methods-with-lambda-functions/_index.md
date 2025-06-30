@@ -1,5 +1,5 @@
 ---
-title: "Integrate API methods with Lambda functions"
+title: "Integrate Lambda functions with API methods"
 weight: 4
 chapter: false
 pre: " <b> 4. </b> "
