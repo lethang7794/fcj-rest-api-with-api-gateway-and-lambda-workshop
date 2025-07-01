@@ -5,14 +5,12 @@ chapter: false
 pre: "<b>7. </b>"
 ---
 
-<!-- TODO: Update cleanup section number -->
+> [!NOTE]
+> Keep these resources if you want to continue with the next workshop.
 
 In additional to the resources in:
 
 - Workshop 1: DynamoDB, Lambda functions, IAM Roles.
-
-> [!NOTE]
-> Keep these resources if you want to continue with the next workshop.
 
 The AWS resource you need to cleanup in this workshop is the API Gateway:
 
