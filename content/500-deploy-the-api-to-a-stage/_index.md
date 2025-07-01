@@ -5,7 +5,10 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-Simply creating and developing an API Gateway API doesn't automatically make it callable by your users. To make it callable, you must deploy your API to a stage.
+Simply creating and developing an API Gateway API doesn't automatically make it callable by your users. To make it callable, you must ["deploy your API to a stage"](https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-publish.html).
+
+> [!TIP]
+> Under the hood, you deploy an API by creating a deployment and associating it with a stage.
 
 ## Deployment and stage of API Gateway
 
@@ -53,3 +56,10 @@ After you deploy an API to a stage, it’s available for clients to invoke. You 
 7. Copy the `Invoke URL` of `dev` stage.
 
 ![alt text](/images/workshop-2/API-Gateway--usersAPI--stage--invoke-URL.jpg)
+
+## Deploy or publish?
+
+In the Lambda console, it's _Deploy API_, but in the AWS Lambda docs, it may also be _Publish API_.
+
+![alt text](/images/workshop-2/api-gateway--deploy.png)
+![alt text](/images/workshop-2/api-gateway--publish.png)
