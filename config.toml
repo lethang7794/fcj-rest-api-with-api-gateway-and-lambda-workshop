@@ -18,7 +18,8 @@ disableNextPrev   = false
 
 [Languages]
 [Languages.en]
-title        = "AWS System Manager"
+# TODO: update English site title
+title        = "Building REST APIs with Amazon API Gateway and AWS Lambda"
 weight       = 1
 languageName = "English"
 
@@ -29,6 +30,7 @@ url        = "https://www.facebook.com/groups/awsstudygroupfcj/"
 weight     = 20
 
 [Languages.vi]
+# TODO: update Vietnamese site title
 title        = "AWS System Manager"
 weight       = 2
 languageName = "Tiếng Việt"
