@@ -1,5 +1,5 @@
 ---
-title: "Integrate update-user Lambda function as /users/{userId} - PATCH method"
+title: "Integrate /users/{userId} - PATCH method with update-user"
 weight: 7
 chapter: false
 pre: " <b> 4.7 </b> "

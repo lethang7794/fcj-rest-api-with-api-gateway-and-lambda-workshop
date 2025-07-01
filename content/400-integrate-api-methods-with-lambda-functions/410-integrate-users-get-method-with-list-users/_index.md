@@ -1,5 +1,5 @@
 ---
-title: "Integrate list-users Lambda function as /users - GET method"
+title: "Integrate /users - GET method with list-users"
 weight: 1
 chapter: false
 pre: " <b> 4.1 </b> "

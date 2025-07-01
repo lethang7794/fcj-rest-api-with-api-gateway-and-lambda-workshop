@@ -1,5 +1,5 @@
 ---
-title: "Integrate create-user Lambda function as /users - POST method"
+title: "Integrate /users - POST method with create-user"
 weight: 3
 chapter: false
 pre: " <b> 4.3 </b> "
