@@ -5,35 +5,62 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-Simply creating and developing an API Gateway API doesn't automatically make it callable by your users. To make it callable, you must ["deploy your API to a stage"](https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-publish.html).
+Simply creating and developing an API Gateway API doesn't automatically make it callable by your users. To make it callable, you must ["_deploy_ your API to a **stage**"](https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-publish.html).
 
-> [!TIP]
-> Under the hood, you deploy an API by creating a deployment and associating it with a stage.
-
-## Deployment and stage of API Gateway
+## Deployment and stage of an API Gateway's API
 
 <!-- TODO: add diagram to clarify stage and deployment  -->
 
 A _deployment_ is a **snapshot** of your API configuration.
 
-A stage is a **named reference** to a _deployment_ of the API and is made available for client applications to call.
+- After you've updated your API configuration (resources, methods, integrations...), you must re-deploy your API to a stage so the changes is available for clients to invoke.
 
-A stage is a named reference to a deployment, which is a snapshot of the API.
-Stages are environments that you can deploy your API to. For example, you can create `development` or `production` stages.
+A _stage_ is a **named reference** to a _deployment_ of the API and is made available for client applications to call.
 
-You can configure different settings for each stage of your API. For changes to take effect, you must first deploy your API.
+- For each stage of your API, you can configure different settings
+
+  e.g. Cache, throttling, firewall/certificate settings...
+
+- For example, you can have `dev`, `prod`, `v2` stages.
+
+> [!TIP]
+> Under the hood, you _deploy_ an API by creating a **deployment** and associating it with a **stage**.
+
+## Endpoint URL and Invoke URL
+
+Each API of Amazon API Gateway has
+
+- a default _endpoint_ (aka hostname of the API) in the format of
+  - `{api-id}.execute-api.{region}.amazonaws.com`, or
+  - `{hostname}`
+
+Each stage is available for client applications to call via
+
+- a _base URL_ in the format of
+  - `{protocol}://{hostname}/{stage}`, or
+  - `https://{api-id}.execute-api.{region}.amazonaws.com/{stage}` (for REST API Gateway in our case).
 
 ---
 
-An API _stage_ is a logical reference to a lifecycle state of your API (for example, `dev`, `prod`, `beta`, or `v2`).
+To call a deployed API, the client submits a request against
 
-- API stages are identified by their API ID and stage name, and they're included in the URL you use to invoke the API.
-- Each stage is a **named reference** to a _deployment_ of the API and is made available for client applications to call.
-- You can create a `$default` stage that is served from the base of your API's URL—for example, `https://{api_id}.execute-api.{region}.amazonaws.com/`. You use this URL to invoke an API stage.
+- an _Invoke URL_ in the format of
+  - `{protocol}://{hostname}/{stage}{resourcePath}`, or
+  - `https://{api-id}.execute-api.{region}.amazonaws.com/{stage}{resourcePath}` (for REST API Gateway in our case).
 
----
+For example
 
-After you deploy an API to a stage, it’s available for clients to invoke. You must deploy an API for changes to take effect. If you enable automatic deployments, changes to an API are automatically released for you.
+- the stage `dev` of a REST API is available at the Invoke URL: `https://{api-id}.execute-api.{region}.amazonaws.com/dev`
+
+![alt text](../../images/workshop-2/api-gateway--invoke-url--stage.png)
+
+- the root resource `/` of stage `dev` of the same REST API is available at the Invoke URL: `https://{api-id}.execute-api.{region}.amazonaws.com/dev/`
+
+![alt text](../../images/workshop-2/api-gateway--invoke-url--root-resource.png)
+
+- the resource `users` of stage `dev` of the same REST API is available at the Invoke URL: `https://{api-id}.execute-api.{region}.amazonaws.com/dev/users`
+
+![alt text](../../images/workshop-2/api-gateway--invoke-url--users-resource.png)
 
 ## Deploy the API to dev stage
 
@@ -62,4 +89,5 @@ After you deploy an API to a stage, it’s available for clients to invoke. You 
 In the Lambda console, it's _Deploy API_, but in the AWS Lambda docs, it may also be _Publish API_.
 
 ![alt text](/images/workshop-2/api-gateway--deploy.png)
+
 ![alt text](/images/workshop-2/api-gateway--publish.png)
