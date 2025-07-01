@@ -42,7 +42,7 @@ pre: " <b> 4.7 </b> "
     - `Content type`: Fill in `application/json`.
     - `Template body`: Fill in:
 
-      ```json
+      ```text
       ## Parse the request body into a JSON object
       #set($inputRoot = $input.path('$'))
       {
