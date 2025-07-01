@@ -24,3 +24,6 @@ pre: " <b> 5.4 </b> "
 7. Copy the `Invoke URL` of `dev` stage.
 
 ![alt text](/images/workshop-2/API-Gateway--usersAPI--stage--invoke-URL.jpg)
+
+> [!TIP]
+> Congratulations, you have deployed an API Gateway. Copy the invoke URL of the `dev` stage, you will need it in the next step.
