@@ -25,16 +25,16 @@ To call a deployed API, the client submits a request against
   - `{protocol}://{hostname}/{stage}{resourcePath}`, or
   - `https://{api-id}.execute-api.{region}.amazonaws.com/{stage}{resourcePath}` (for REST API Gateway in our case).
 
-For example
+For example:
 
-- the stage `dev` of a REST API is available at the Invoke URL: `https://{api-id}.execute-api.{region}.amazonaws.com/dev`
+- The stage `dev` of a REST API is available at the Invoke URL: `https://{api-id}.execute-api.{region}.amazonaws.com/dev`
 
-![alt text](../../images/workshop-2/api-gateway--invoke-url--stage.png)
+![alt text](/images/workshop-2/api-gateway--invoke-url--stage.png)
 
-- the root resource `/` of stage `dev` of the same REST API is available at the Invoke URL: `https://{api-id}.execute-api.{region}.amazonaws.com/dev/`
+- The root resource `/` of stage `dev` of the same REST API is available at the Invoke URL: `https://{api-id}.execute-api.{region}.amazonaws.com/dev/`
 
-![alt text](../../images/workshop-2/api-gateway--invoke-url--root-resource.png)
+![alt text](/images/workshop-2/api-gateway--invoke-url--root-resource.png)
 
-- the resource `users` of stage `dev` of the same REST API is available at the Invoke URL: `https://{api-id}.execute-api.{region}.amazonaws.com/dev/users`
+- The resource `users` of stage `dev` of the same REST API is available at the Invoke URL: `https://{api-id}.execute-api.{region}.amazonaws.com/dev/users`
 
-![alt text](../../images/workshop-2/api-gateway--invoke-url--users-resource.png)
+![alt text](/images/workshop-2/api-gateway--invoke-url--users-resource.png)
