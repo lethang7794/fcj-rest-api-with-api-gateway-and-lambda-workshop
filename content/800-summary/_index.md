@@ -31,6 +31,9 @@ If you're interest more in how to integrate API Gateway with Lambda functions, c
 - [Invoking Lambda with events from other AWS services - AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-services.html#lambda-invocation-trigger)
 - [Invoking a Lambda function using an Amazon API Gateway endpoint - AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/services-apigateway.html)
 
-Otherwise, you can go to the next workshop.
+Otherwise, you can go to the next workshop to learn about:
+
+- Integrating a frontend application with API Gateway.
+- Hosting a frontend application with S3
 
 <!-- TODO: add link to next workshop -->
