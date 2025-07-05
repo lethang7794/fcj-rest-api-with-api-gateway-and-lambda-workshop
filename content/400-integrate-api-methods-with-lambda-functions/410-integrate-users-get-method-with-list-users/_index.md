@@ -2,7 +2,7 @@
 title: "Integrate /users - GET method with list-users"
 weight: 1
 chapter: false
-pre: " <b> 4.1 </b> "
+pre: " <b> 4.1. </b> "
 ---
 
 1. Open [APIs section](https://console.aws.amazon.com/apigateway/main/apis) of the API Gateway console.

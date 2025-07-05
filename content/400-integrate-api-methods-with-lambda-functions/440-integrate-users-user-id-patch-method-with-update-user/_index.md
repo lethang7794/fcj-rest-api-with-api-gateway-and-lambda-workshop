@@ -2,7 +2,7 @@
 title: "Integrate /users/{userId} - PATCH method with update-user"
 weight: 4
 chapter: false
-pre: " <b> 4.4 </b> "
+pre: " <b> 4.4. </b> "
 ---
 
 1. Go back to the _Resources_ section of the `UsersAPI` API in API Gateway console.

@@ -2,7 +2,7 @@
 title: "Integrate /users/{userId} - GET method with get-user"
 weight: 3
 chapter: false
-pre: " <b> 4.3 </b> "
+pre: " <b> 4.3. </b> "
 ---
 
 1. Go back to the _Resources_ section of the `UsersAPI` API in API Gateway console.

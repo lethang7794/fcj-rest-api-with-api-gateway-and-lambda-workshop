@@ -2,7 +2,7 @@
 title: "Integrate /users - POST method with create-user"
 weight: 2
 chapter: false
-pre: " <b> 4.2 </b> "
+pre: " <b> 4.2. </b> "
 ---
 
 1. Go back to the _Resources_ section of the `UsersAPI` API in API Gateway console.
