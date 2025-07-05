@@ -12,7 +12,9 @@ In additional to the resources in:
 
 - Workshop 1: DynamoDB, Lambda functions, IAM Roles.
 
-The AWS resource you need to cleanup in this workshop is the API Gateway:
+The AWS resource you need to clean-up in this workshop is the API Gateway.
+
+### The API Gateway
 
 1. Open [APIs section](https://console.aws.amazon.com/apigateway/main/apis) of the API Gateway console.
 2. In the list of the APIs, click on the name of the API (`UsersAPI`).

@@ -25,13 +25,3 @@ pre: " <b> 4.2 </b> "
 6. You will be redirect to the detail of the `/users - POST` method.
 
 ![alt text](/images/workshop-2/API-Gateway--users-POST-method--method-detail.jpg)
-
-7. Open the `Test` tab.
-8. In the Request body field, fill in:
-
-   ```json
-   {
-     "email": "tranvana@gmail.com",
-     "name": "Tran Van A"
-   }
-   ```

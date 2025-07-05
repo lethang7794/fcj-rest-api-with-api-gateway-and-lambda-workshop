@@ -76,7 +76,7 @@ Under the hood, when we call the API Gateway - an event occurs in API Gateway:
 - API Gateway then directly invoke your Lambda function with the _(generated) event_.
 
 > [!TIP]
-> Congratulation, you just encounter your first event-driven architect.
+> Congratulation, you just create your first event-driven architect in AWS.
 
 ---
 

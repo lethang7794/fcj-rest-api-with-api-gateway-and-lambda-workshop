@@ -31,11 +31,10 @@ pre: " <b> 4.1 </b> "
 
 ![alt text](/images/workshop-2/API-Gateway--users-GET-method--create-method.jpg)
 
-8. In the `Create method` page:
-   - In `Method details` section:
-     - `Method type`: Select `GET`.
-     - Integration type: Keep Lambda function.
-     - Lambda function: Choose the `list-users` function.
+8. In the `Create method` page, `Method details` section:
+   - `Method type`: Select `GET`.
+   - Integration type: Keep Lambda function.
+   - Lambda function: Choose the `list-users` function.
 
 ![alt text](/images/workshop-2/API-Gateway--users-GET-method--create-method-detail.jpg)
 
