@@ -30,8 +30,7 @@ url        = "https://www.facebook.com/groups/awsstudygroupfcj/"
 weight     = 20
 
 [Languages.vi]
-# TODO: update Vietnamese site title
-title        = "AWS System Manager"
+title        = "Xây dựng REST API với Amazon API Gateway và AWS Lambda"
 weight       = 2
 languageName = "Tiếng Việt"
 
