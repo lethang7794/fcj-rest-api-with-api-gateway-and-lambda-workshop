@@ -1,8 +1,8 @@
 ---
 title: "Test /users/{userId} - DELETE method"
-weight: 10
+weight: 5
 chapter: false
-pre: " <b> 4.10 </b> "
+pre: " <b> 5.5 </b> "
 ---
 
 1. In the _Resources_ section of the `UsersAPI`.

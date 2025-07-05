@@ -2,7 +2,7 @@
 title: "Endpoint URL and Invoke URL"
 weight: 3
 chapter: false
-pre: " <b> 5.3 </b> "
+pre: " <b> 6.3 </b> "
 ---
 
 Each API of Amazon API Gateway has

@@ -1,8 +1,8 @@
 ---
 title: "Test methods of REST API Gateway"
-weight: 4
+weight: 5
 chapter: false
-pre: " <b> 4. </b> "
+pre: " <b> 5. </b> "
 ---
 
 In this section, we'll test our REST API Gateway endpoints using the AWS Management Console. The console provides a user-friendly interface to verify each endpoint's functionality before deploying to a stage.
