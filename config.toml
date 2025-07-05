@@ -1,5 +1,5 @@
 # Change the default theme to be use when building the site with Hugo
-theme = "hugo-theme-learn"
+theme         = "hugo-theme-learn"
 enableGitInfo = true
 
 # For search functionality
@@ -19,7 +19,6 @@ disableNextPrev   = false
 
 [Languages]
 [Languages.en]
-# TODO: update English site title
 title        = "Building REST APIs with Amazon API Gateway and AWS Lambda"
 weight       = 1
 languageName = "English"
