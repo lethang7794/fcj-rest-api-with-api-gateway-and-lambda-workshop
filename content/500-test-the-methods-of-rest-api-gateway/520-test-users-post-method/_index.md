@@ -2,7 +2,7 @@
 title: "Test /users - POST method"
 weight: 2
 chapter: false
-pre: " <b> 5.2 </b> "
+pre: " <b> 5.2. </b> "
 ---
 
 1. In the _Resources_ section of the `UsersAPI`.

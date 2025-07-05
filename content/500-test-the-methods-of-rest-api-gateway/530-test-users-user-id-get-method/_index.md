@@ -2,7 +2,7 @@
 title: "Test /users/{userId} - GET method"
 weight: 3
 chapter: false
-pre: " <b> 5.3 </b> "
+pre: " <b> 5.3. </b> "
 ---
 
 1. In the _Resources_ section of the `UsersAPI`.

@@ -2,7 +2,7 @@
 title: "Test /users - GET method"
 weight: 1
 chapter: false
-pre: " <b> 5.1 </b> "
+pre: " <b> 5.1. </b> "
 ---
 
 1. Open [APIs section](https://console.aws.amazon.com/apigateway/main/apis) of the API Gateway console.

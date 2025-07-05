@@ -2,7 +2,7 @@
 title: "Test /users/{userId} - PATCH method"
 weight: 4
 chapter: false
-pre: " <b> 5.4 </b> "
+pre: " <b> 5.4. </b> "
 ---
 
 1. In the _Resources_ section of the `UsersAPI`.

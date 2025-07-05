@@ -2,7 +2,7 @@
 title: "Deploy the UsersAPI to dev stage"
 weight: 4
 chapter: false
-pre: " <b> 6.4 </b> "
+pre: " <b> 6.4. </b> "
 ---
 
 1. Open [APIs section](https://console.aws.amazon.com/apigateway/main/apis) of the API Gateway console.
