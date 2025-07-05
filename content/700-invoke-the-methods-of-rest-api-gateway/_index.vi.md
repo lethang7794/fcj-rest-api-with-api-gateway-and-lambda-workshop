@@ -1,13 +1,13 @@
 ---
-title: "Invoke the methods of REST API Gateway"
+title: "Gọi các phương thức của REST API Gateway"
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
 
-## Without API Gateway
+## Không sử dụng API Gateway
 
-Without an API Gateway, you _directly_ invoke the Lambdas function using different function URLs, with any HTTP methods as in previous workshop:
+Khi không sử dụng API Gateway, bạn phải _trực tiếp_ gọi các hàm Lambda thông qua các URL hàm khác nhau, với bất kỳ phương thức HTTP nào như trong workshop trước:
 
 ```shell
 curl 'https://u2z6j6noy3vnrynejsjqmkgiry0asnnm.lambda-url.ap-southeast-1.on.aws/'
@@ -38,60 +38,60 @@ curl 'https://5ywq2njgsehqpl3xl2nrs334ue0inscy.lambda-url.ap-southeast-1.on.aws/
 ```
 
 > [!NOTE]
-> Notice each time, you make a HTTP call to a different URL, you - as the end user - are handling the routing to the API for CRUD operations.
+> Lưu ý rằng mỗi lần bạn thực hiện một lệnh gọi HTTP đến một URL khác nhau, bạn - với tư cách là người dùng cuối - đang tự xử lý việc định tuyến đến API cho các thao tác CRUD.
 
-## With API Gateway
+## Với API Gateway
 
-After integrate the Lambda functions to the API Gateway, our architect now looks like this:
+Sau khi tích hợp các hàm Lambda vào API Gateway, kiến trúc của chúng ta sẽ trông như thế này:
 
 ![alt text](/images/diagrams/workshop-2--api-gateway--rest-api--event.drawio.svg)
 
-After integrate the Lambda functions to the API Gateway with the type of _REST API_,
+Sau khi tích hợp các hàm Lambda vào API Gateway với loại _REST API_,
 
-- instead of _directly_ invoking the Lambda functions,
-- you call the REST API Gateway using:
-  - the same URL (the _Invoke URL_ of the API in a stage)
-  - different resource paths
-  - different HTTP methods
-- then the API Gateway also _directly_ invoke your Lambda functions.
+- thay vì _trực tiếp_ gọi các hàm Lambda,
+- bạn gọi REST API Gateway bằng cách sử dụng:
+  - cùng một URL (URL _Invoke URL_ của API trong một stage)
+  - các đường dẫn tài nguyên khác nhau
+  - các phương thức HTTP khác nhau
+- sau đó API Gateway sẽ _trực tiếp_ gọi các hàm Lambda của bạn.
 
-## API Gateway acts as a trigger for Lambda functions
-
-> [!NOTE]
-> When an other AWS service directly invoke your Lambda function, that's service is called a _trigger_ for your Lambda function.
-
-In our case, the API Gateway is acting as a trigger for the Lambda functions.
-
-Under the hood, when we call the API Gateway - an event occurs in API Gateway:
-
-- API Gateway generates data for that occurred event
-
-  The data is in JSON format contains
-  - the event type
-  - other information...
+## API Gateway đóng vai trò là trình kích hoạt cho các hàm Lambda
 
 > [!NOTE]
-> This generated data is also know as _generated event_ (or in short _event_).
+> Khi một dịch vụ AWS khác trực tiếp gọi hàm Lambda của bạn, dịch vụ đó được gọi là _trigger_ (trình kích hoạt) cho hàm Lambda của bạn.
 
-- API Gateway then directly invoke your Lambda function with the _(generated) event_.
+Trong trường hợp của chúng ta, API Gateway đóng vai trò là trình kích hoạt cho các hàm Lambda.
+
+Về mặt kỹ thuật, khi chúng ta gọi API Gateway - một sự kiện xảy ra trong API Gateway:
+
+- API Gateway tạo dữ liệu cho sự kiện đã xảy ra
+
+  Dữ liệu này ở định dạng JSON chứa:
+  - loại sự kiện
+  - và các thông tin khác...
+
+> [!NOTE]
+> Dữ liệu được tạo này còn được gọi là _sự kiện được tạo_ (hoặc ngắn gọn là _sự kiện_).
+
+- Sau đó, API Gateway trực tiếp gọi hàm Lambda của bạn với _(sự kiện được tạo)_.
 
 > [!TIP]
-> Congratulation, you just create your first event-driven architect in AWS.
+> Chúc mừng, bạn vừa tạo kiến trúc hướng sự kiện (EDA) đầu tiên của mình trên AWS.
 
 ---
 
-## Invoke our REST API Gateway
+## Gọi REST API Gateway của chúng ta
 
 > [!NOTE]
-> Replace `https://pg6xn32zdc.execute-api.ap-southeast-1.amazonaws.com/dev` with your API's Invoke URL.
+> Thay thế `https://pg6xn32zdc.execute-api.ap-southeast-1.amazonaws.com/dev` bằng Invoke URL của API của bạn.
 
 ```shell
-# Make a GET request to /users path (to invoke list-users)
+# Gửi yêu cầu GET đến đường dẫn /users (để gọi list-users)
 curl 'https://pg6xn32zdc.execute-api.ap-southeast-1.amazonaws.com/dev/users'
 ```
 
 ```shell
-# Make a POST request to /users path (to invoke create-user)
+# Gửi yêu cầu POST đến đường dẫn /users (để gọi create-user)
 curl 'https://pg6xn32zdc.execute-api.ap-southeast-1.amazonaws.com/dev/users' \
   -X POST \
   -H 'content-type: application/json' \
@@ -99,12 +99,12 @@ curl 'https://pg6xn32zdc.execute-api.ap-southeast-1.amazonaws.com/dev/users' \
 ```
 
 ```shell
-# Make a GET request to /users/{userId} path (to invoke get-user)
+# Gửi yêu cầu GET đến đường dẫn /users/{userId} (để gọi get-user)
 curl 'https://pg6xn32zdc.execute-api.ap-southeast-1.amazonaws.com/dev/users/5aab87c6-1328-44c9-98c6-c556c1351591'
 ```
 
 ```shell
-# Make a PATCH request to /users/{userId} path (to invoke update-user)
+# Gửi yêu cầu PATCH đến đường dẫn /users/{userId} (để gọi update-user)
 curl 'https://pg6xn32zdc.execute-api.ap-southeast-1.amazonaws.com/dev/users/5aab87c6-1328-44c9-98c6-c556c1351591' \
   -X PATCH \
   -H 'content-type: application/json' \
@@ -112,7 +112,7 @@ curl 'https://pg6xn32zdc.execute-api.ap-southeast-1.amazonaws.com/dev/users/5aab
 ```
 
 ```shell
-# Make a DELETE request to /users/{userId} path (to invoke delete-user)
+# Gửi yêu cầu DELETE đến đường dẫn /users/{userId} (để gọi delete-user)
 curl 'https://pg6xn32zdc.execute-api.ap-southeast-1.amazonaws.com/dev/users/5aab87c6-1328-44c9-98c6-c556c1351591' \
   -X DELETE
 ```
@@ -120,4 +120,4 @@ curl 'https://pg6xn32zdc.execute-api.ap-southeast-1.amazonaws.com/dev/users/5aab
 ![alt text](/images/workshop-2/API-Gateway--invoke-REST-API-methods.png)
 
 > [!TIP]
-> If you still keep the function URLs in previous workshop, now you can delete all of them. The API Gateway can invoke these Lambda functions without the function URLs.
+> Nếu bạn vẫn còn giữ các URL hàm từ workshop trước, bây giờ bạn có thể xóa tất cả chúng. API Gateway có thể gọi các hàm Lambda này mà không cần các URL hàm.

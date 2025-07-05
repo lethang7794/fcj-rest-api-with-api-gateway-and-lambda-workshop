@@ -1,20 +1,20 @@
 ---
-title: "Test /users - GET method"
+title: "Kiểm tra phương thức GET /users"
 weight: 1
 chapter: false
 pre: " <b> 5.1. </b> "
 ---
 
-1. Open [APIs section](https://console.aws.amazon.com/apigateway/main/apis) of the API Gateway console.
-2. In the list of the APIs, click on the name of the API (`UsersAPI`).
-3. You will be redirected to the _Resources_ section of the `UsersAPI`.
-4. Under `/users` resource, select `GET` method.
-5. Open the `Test` tab.
+1. Mở [phần APIs](https://console.aws.amazon.com/apigateway/main/apis) trong bảng điều khiển API Gateway.
+1. Trong danh sách các API, nhấp vào tên API (`UsersAPI`).
+1. Bạn sẽ được chuyển hướng đến phần _Resources_ của `UsersAPI`.
+1. Dưới tài nguyên `/users`, chọn phương thức `GET`.
+1. Mở tab `Test`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-GET-method--test-tab.jpg)
 
-6. Click `Test`.
+1. Nhấp vào `Test`.
 
-7. Verify that the `list-users` Lambda function is invoked successfully, and the response has a list of users.
+1. Xác minh rằng hàm Lambda `list-users` được gọi thành công và phản hồi có danh sách người dùng.
 
 ![alt text](/images/workshop-2/API-Gateway--users-GET-method--test-results.jpg)

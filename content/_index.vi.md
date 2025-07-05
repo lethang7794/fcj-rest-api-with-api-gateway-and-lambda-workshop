@@ -1,16 +1,16 @@
 ---
-title: Building REST APIs with Amazon API Gateway and AWS Lambda
+title: Xây dựng REST API với Amazon API Gateway và AWS Lambda
 weight: 1
 chapter: false
 ---
 
-# Building REST APIs with Amazon API Gateway and AWS Lambda
+# Xây dựng REST API với Amazon API Gateway và AWS Lambda
 
-In this workshop, you will:
+Trong workshop này, bạn sẽ:
 
-- Create a RESTful API using Amazon API Gateway
-- The API is backed by the serverless CRUD API microservice (created in previous workshop)
+- Tạo một RESTful API bằng Amazon API Gateway
+- API này được hỗ trợ bởi microservice CRUD API không máy chủ (đã tạo trong workshop trước)
 
-The architecture looks like this
+Kiến trúc sẽ trông như thế này
 
 ![alt text](/images/diagrams/workshop-2--api-gateway--rest-api.drawio.svg)

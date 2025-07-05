@@ -1,22 +1,22 @@
 ---
-title: "Test /users/{userId} - GET method"
+title: "Kiểm tra phương thức GET /users/{userId}"
 weight: 3
 chapter: false
 pre: " <b> 5.3. </b> "
 ---
 
-1. In the _Resources_ section of the `UsersAPI`.
-2. Under `/users` resource's `{userId}` resource, select `GET` method.
+1. Trong phần _Resources_ của `UsersAPI`.
+1. Dưới tài nguyên `{userId}` của tài nguyên `/users`, chọn phương thức `GET`.
 
-3. Open the `Test` tab.
-4. In `Test method` - `Path` - `userId` , fill in `d1d2f263-9a93-408c-a836-c13e24fcebf6`.
+1. Mở tab `Test`.
+1. Trong `Test method` - `Path` - `userId`, nhập `d1d2f263-9a93-408c-a836-c13e24fcebf6`.
 
    > [!NOTE]
-   > Replace the id value with the id of user created in previous step.
+   > Thay thế giá trị id bằng id của người dùng đã tạo ở bước trước.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--test-path.jpg)
 
-5. Click `Test`.
-6. Verify that the `get-user` Lambda function is invoked successfully, and the response is the data of the user.
+1. Nhấp vào `Test`.
+1. Xác minh rằng hàm Lambda `get-user` được gọi thành công và phản hồi là dữ liệu của người dùng.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--test-results.jpg)

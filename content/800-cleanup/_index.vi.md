@@ -1,29 +1,29 @@
 ---
-title: "Cleanup"
+title: "Dọn dẹp tài nguyên"
 weight: 8
 chapter: false
 pre: "<b>8. </b>"
 ---
 
 > [!NOTE]
-> Keep these resources if you want to continue with the next workshop.
+> Giữ nguyên các tài nguyên này nếu bạn muốn tiếp tục với workshop tiếp theo.
 
-In additional to the resources in:
+Ngoài các tài nguyên trong:
 
-- Workshop 1: DynamoDB, Lambda functions, IAM Roles.
+- Workshop 1: DynamoDB, các hàm Lambda, IAM Roles.
 
-The AWS resource you need to clean-up in this workshop is the API Gateway.
+Tài nguyên AWS bạn cần dọn dẹp trong workshop này là API Gateway.
 
-### The API Gateway
+### API Gateway
 
-1. Open [APIs section](https://console.aws.amazon.com/apigateway/main/apis) of the API Gateway console.
-2. In the list of the APIs, click on the name of the API (`UsersAPI`).
-3. Click `Delete`.
+1. Mở [phần APIs](https://console.aws.amazon.com/apigateway/main/apis) trong bảng điều khiển API Gateway.
+2. Trong danh sách các API, nhấp vào tên API (`UsersAPI`).
+3. Nhấp vào `Delete`.
 
 ![alt text](/images/workshop-2/API-Gateway--delete-API.png)
 
-4. Type in `confirm`
-5. Click `Delete`.
+1. Nhập `confirm`
+1. Nhấp vào `Delete`.
 
 ![alt text](/images/workshop-2/API-Gateway--delete-API-confirm.png)
 

@@ -1,5 +1,5 @@
 ---
-title: "Deployment and stage"
+title: "Triển khai và stage"
 weight: 1
 chapter: false
 pre: " <b> 6.1. </b> "
@@ -7,17 +7,17 @@ pre: " <b> 6.1. </b> "
 
 <!-- TODO: add diagram to clarify stage and deployment  -->
 
-A _deployment_ is a **snapshot** of your API configuration.
+Một _deployment_ (sự triển khai) là một **bản chụp** cấu hình API của bạn.
 
-- After you've updated your API configuration (resources, methods, integrations...), you must re-deploy your API to a stage so the changes is available for clients to invoke.
+- Sau khi bạn cập nhật cấu hình API (tài nguyên, phương thức, tích hợp...), bạn phải triển khai lại API lên một stage để các thay đổi có sẵn cho client gọi.
 
-A _stage_ is a **named reference** to a _deployment_ of the API and is made available for client applications to call.
+Một _stage_ là một **tham chiếu có tên** đến một _deployment_ của API và được cung cấp để các ứng dụng client có thể gọi.
 
-- For each stage of your API, you can configure different settings
+- Đối với mỗi stage của API, bạn có thể cấu hình các thiết lập khác nhau
 
-  e.g. Cache, throttling, firewall/certificate settings...
+  Ví dụ: Bộ nhớ đệm, giới hạn tốc độ, cài đặt tường lửa/chứng chỉ...
 
-- For example, you can have `dev`, `prod`, `v2` stages.
+- Ví dụ: Bạn có thể có các stage như `dev`, `prod`, `v2`.
 
 > [!TIP]
-> Under the hood, you _deploy_ an API by creating a **deployment** and associating it with a **stage**.
+> Về bản chất, bạn _triển khai_ một API bằng cách tạo một **sự triển khai (deployment)** và liên kết nó với một **môi trường (stage)**.

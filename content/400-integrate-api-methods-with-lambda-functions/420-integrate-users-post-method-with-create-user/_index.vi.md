@@ -1,27 +1,27 @@
 ---
-title: "Integrate /users - POST method with create-user"
+title: "Tích hợp phương thức POST /users với create-user"
 weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-1. Go back to the _Resources_ section of the `UsersAPI` API in API Gateway console.
-2. Select `/users` resource.
-3. Click `Create method`.
+1. Quay lại phần _Resources_ của API `UsersAPI` trong bảng điều khiển API Gateway.
+1. Chọn tài nguyên `/users`.
+1. Nhấp vào `Create method`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-POST-method--create-method.jpg)
 
-4. In the `Create method` page, `Method details` section:
+1. Trong trang `Create method`, phần `Method details`:
 
-- `Method type`: Select `POST`.
-- Integration type: Keep Lambda function.
-- Lambda function: Choose the `create-user` function.
+- `Method type`: Chọn `POST`.
+- Integration type: Giữ nguyên Lambda function.
+- Lambda function: Chọn hàm `create-user`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-POST-method--create-method-detail.jpg)
 
-5. Keep other settings as default.
-   - Scroll to the bottom and click `Create method`.
+1. Giữ nguyên các cài đặt khác.
+   - Cuộn xuống dưới và nhấp vào `Create method`.
 
-6. You will be redirect to the detail of the `/users - POST` method.
+1. Bạn sẽ được chuyển hướng đến trang chi tiết của phương thức `/users - POST`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-POST-method--method-detail.jpg)

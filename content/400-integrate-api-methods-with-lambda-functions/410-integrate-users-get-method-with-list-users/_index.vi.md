@@ -1,48 +1,48 @@
 ---
-title: "Integrate /users - GET method with list-users"
+title: "Tích hợp phương thức GET /users với list-users"
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-1. Open [APIs section](https://console.aws.amazon.com/apigateway/main/apis) of the API Gateway console.
-2. In the list of the APIs, click on the name of the API (`UsersAPI`).
+1. Mở [phần APIs](https://console.aws.amazon.com/apigateway/main/apis) trong bảng điều khiển API Gateway.
+1. Trong danh sách các API, nhấp vào tên API (`UsersAPI`).
 
 ![alt text](/images/workshop-2/API-Gateway--API-detail.png)
 
-3. You will be redirected to the _Resources_ section of the `UsersAPI`.
+1. Bạn sẽ được chuyển hướng đến phần _Resources_ của `UsersAPI`.
 
 > [!TIP]
-> After you create an API, you will be automatically redirected from the _APIs_ section of the API Gateway to the _Resources_ section of that API (e.g. `API: UsersAPI`).
+> Sau khi tạo một API, bạn sẽ tự động được chuyển hướng từ phần _APIs_ của API Gateway đến phần _Resources_ của API đó (ví dụ: `API: UsersAPI`).
 
-4. Click `Create resource`
+1. Nhấp vào `Create resource`
 
 ![alt text](/images/workshop-2/API-Gateway--create-resource.jpg)
 
-5. In the `Create resource` page
-   - For `Resource path`: Choose `/`
-   - For `Resource name`: Fill in `users`.
-   - Click `Create resource`.
+1. Trong trang `Create resource`:
+   - Tại `Resource path`: Chọn `/`
+   - Tại `Resource name`: Nhập `users`.
+   - Nhấp vào `Create resource`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-resource--create-resource-detail.jpg)
 
-6. Click on the `users` resource you've just created.
-7. Click `Create method`.
+1. Nhấp vào tài nguyên `users` bạn vừa tạo.
+1. Nhấp vào `Create method`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-GET-method--create-method.jpg)
 
-8. In the `Create method` page, `Method details` section:
-   - `Method type`: Select `GET`.
-   - Integration type: Keep Lambda function.
-   - Lambda function: Choose the `list-users` function.
+1. Trong trang `Create method`, phần `Method details`:
+   - `Method type`: Chọn `GET`.
+   - Integration type: Giữ nguyên Lambda function.
+   - Lambda function: Chọn hàm `list-users`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-GET-method--create-method-detail.jpg)
 
-9. Keep other settings as default.
-   - Scroll to the bottom and click `Create method`.
+1. Giữ nguyên các cài đặt khác.
+   - Cuộn xuống dưới và nhấp vào `Create method`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-GET-method--create-button.jpg)
 
-10. You will be redirect to the detail of the `/users - GET` method.
+1. Bạn sẽ được chuyển hướng đến trang chi tiết của phương thức `/users - GET`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-GET-method.jpg)

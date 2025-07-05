@@ -1,14 +1,14 @@
 ---
-title: "Test /users - POST method"
+title: "Kiểm tra phương thức POST /users"
 weight: 2
 chapter: false
 pre: " <b> 5.2. </b> "
 ---
 
-1. In the _Resources_ section of the `UsersAPI`.
-2. Under `/users` resource, select `POST` method.
-3. Open `Test` tab.
-4. In the Request body field, fill in:
+1. Trong phần _Resources_ của `UsersAPI`.
+1. Dưới tài nguyên `/users`, chọn phương thức `POST`.
+1. Mở tab `Test`.
+1. Trong trường Request body, nhập:
 
    ```json
    {
@@ -19,8 +19,8 @@ pre: " <b> 5.2. </b> "
 
 ![alt text](/images/workshop-2/API-Gateway--users-POST-method--test-request.jpg)
 
-5. Click `Test`.
+1. Nhấp vào `Test`.
 
-6. Verify that the `create-users` Lambda function is invoked successfully, and the response is the created user.
+1. Xác minh rằng hàm Lambda `create-users` được gọi thành công và phản hồi là thông tin người dùng vừa được tạo.
 
 ![alt text](/images/workshop-2/API-Gateway--users-POST-method--test-results.jpg)

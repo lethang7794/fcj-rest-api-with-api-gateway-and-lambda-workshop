@@ -1,55 +1,55 @@
 ---
-title: "Integrate /users/{userId} - DELETE method with delete-user"
+title: "Tích hợp phương thức DELETE /users/{userId} với delete-user"
 weight: 5
 chapter: false
 pre: " <b> 4.5. </b> "
 ---
 
-1. Go back to the _Resources_ section of the `UsersAPI` API in API Gateway console.
-2. Select `/users/{userId}` resource.
-3. Click `Create method`.
+1. Quay lại phần _Resources_ của API `UsersAPI` trong bảng điều khiển API Gateway.
+1. Chọn tài nguyên `/users/{userId}`.
+1. Nhấp vào `Create method`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--create-method.jpg)
 
-4. In the `Create method` page - `Method details` section:
-   - `Method type`: Select `DELETE`.
-   - Integration type: Keep Lambda function.
-   - Lambda function: Choose the `delete-user` function.
+1. Trong trang `Create method` - phần `Method details`:
+   - `Method type`: Chọn `DELETE`.
+   - Integration type: Giữ nguyên Lambda function.
+   - Lambda function: Chọn hàm `delete-user`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--create-method-detail.jpg)
 
-5.  Keep other settings as default.
-    - Scroll to the bottom and click `Create method`.
+1. Giữ nguyên các cài đặt khác.
+   - Cuộn xuống dưới và nhấp vào `Create method`.
 
-6.  You will be redirect to the detail of the `/users/{userId} - DELETE` method.
+1. Bạn sẽ được chuyển hướng đến trang chi tiết của phương thức `/users/{userId} - DELETE`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--method-detail.png)
 
-7. Open the `Integration request` tab.
-8. In the `Integration request settings` section, click `Edit`.
+1. Mở tab `Integration request`.
+1. Trong phần `Integration request settings`, nhấp vào `Edit`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--integration-request.jpg)
 
-9. In the `Edit integration request` page:
+1. Trong trang `Edit integration request`:
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--integration-request-detail.jpg)
 
-10. Expand the `URL path parameters` section:
-    - Click `Add path parameter`.
-    - `Name`: Fill in `userId`.
-    - `Mapped from`: Fill in `method.request.path.userId`.
+1. Mở rộng phần `URL path parameters`:
+   - Nhấp vào `Add path parameter`.
+   - `Name`: Nhập `userId`.
+   - `Mapped from`: Nhập `method.request.path.userId`.
 
-11. Expand the `Mapping templates` section:
-    - Click `Add mapping template`.
-    - `Content type`: Fill in `application/json`.
-    - `Template body`: Fill in:
+1. Mở rộng phần `Mapping templates`:
+   - Nhấp vào `Add mapping template`.
+   - `Content type`: Nhập `application/json`.
+   - `Template body`: Nhập:
 
-      ```json
-      {
-        "id": "$input.params('userId')"
-      }
-      ```
+     ```json
+     {
+       "id": "$input.params('userId')"
+     }
+     ```
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-DELETE-method--integration-request--URL-path-parameters-and-mapping-template-body.jpg)
 
-12. Scroll to the bottom, click `Save`.
+1. Cuộn xuống dưới, nhấp vào `Save`.

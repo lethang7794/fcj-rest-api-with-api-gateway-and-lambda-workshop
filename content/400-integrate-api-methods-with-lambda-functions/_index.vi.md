@@ -1,18 +1,18 @@
 ---
-title: "Integrate API methods with Lambda functions"
+title: "Tích hợp các phương thức API với hàm Lambda"
 weight: 4
 chapter: false
 pre: " <b> 4. </b> "
 ---
 
-In this section, we'll connect our REST API endpoints to their corresponding Lambda functions. This integration will enable our API Gateway to trigger the appropriate Lambda functions based on the HTTP methods and routes. We'll cover the following integrations:
+Trong phần này, chúng ta sẽ kết nối các endpoint REST API với các hàm Lambda tương ứng. Sự tích hợp này sẽ cho phép API Gateway kích hoạt (trigger) các hàm Lambda phù hợp dựa trên các phương thức HTTP và route. Chúng ta sẽ thực hiện các tích hợp sau:
 
-| API Resource - Method    | Lambda Function | Description                           |
-| ------------------------ | --------------- | ------------------------------------- |
-| `/users          GET`    | `list-users`    | Retrieve all users from the system    |
-| `/users          POST`   | `create-user`   | Add a new user to the system          |
-| `/users/{userId} GET`    | `get-user`      | Retrieve details of a specific user   |
-| `/users/{userId} PATCH`  | `update-user`   | Modify an existing user's information |
-| `/users/{userId} DELETE` | `delete-user`   | Remove a user from the system         |
+| Tài nguyên API - Phương thức | Hàm Lambda    | Mô tả                                |
+| --------------------------- | ------------- | ------------------------------------ |
+| `/users          GET`       | `list-users`  | Lấy danh sách tất cả người dùng trong hệ thống |
+| `/users          POST`      | `create-user` | Thêm người dùng mới vào hệ thống     |
+| `/users/{userId} GET`       | `get-user`    | Lấy thông tin chi tiết của một người dùng cụ thể |
+| `/users/{userId} PATCH`     | `update-user` | Cập nhật thông tin của người dùng hiện có |
+| `/users/{userId} DELETE`    | `delete-user` | Xóa người dùng khỏi hệ thống         |
 
-Each integration will be configured with the appropriate request/response mappings to ensure seamless communication between API Gateway and Lambda functions.
+Mỗi tích hợp sẽ được cấu hình với các ánh xạ request/response phù hợp để đảm bảo giao tiếp liền mạch giữa API Gateway và các hàm Lambda.

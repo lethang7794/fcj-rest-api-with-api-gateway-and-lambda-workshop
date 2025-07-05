@@ -1,18 +1,18 @@
 ---
-title: "Preparation"
+title: "Chuẩn bị"
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
-Before starting this workshop, you need:
+Trước khi bắt đầu workshop này, bạn cần:
 
-1. An IAM user with `AdministratorAccess` permissions that you can login with to AWS Management Console.
+1. Một IAM user với quyền `AdministratorAccess` mà bạn có thể sử dụng để đăng nhập vào AWS Management Console.
 
    ![alt text](/images/workshop-2/IAM-user-login-and-permissions.png)
 
-   If you haven't create an IAM user, follow [Create IAM Group and IAM User :: MANAGING ACCESS CONTROL WITH AWS IAM (IDENTITY AND ACCESS MANAGEMENT)](https://000002.awsstudygroup.com/2-create-admin-user-and-group/) to create one.
+   Nếu bạn chưa tạo IAM user, hãy làm theo hướng dẫn [Tạo IAM Group và IAM User :: QUẢN LÝ KIỂM SOÁT TRUY CẬP VỚI AWS IAM (IDENTITY AND ACCESS MANAGEMENT)](https://000002.awsstudygroup.com/2-create-admin-user-and-group/) để tạo.
 
-2. The CRUD Lambda functions (`create-user`, `list-users`, `get-user`, `update-user`, `delete-user`) that will be used as the backend, which is integrated with the REST API Gateway.
+2. Các hàm Lambda CRUD (`create-user`, `list-users`, `get-user`, `update-user`, `delete-user`) sẽ được sử dụng làm backend, tích hợp với REST API Gateway.
 
-   If you haven't create these CRUD Lambda functions, follow previous workshop to create them.
+   Nếu bạn chưa tạo các hàm Lambda CRUD này, hãy làm theo workshop trước để tạo chúng.

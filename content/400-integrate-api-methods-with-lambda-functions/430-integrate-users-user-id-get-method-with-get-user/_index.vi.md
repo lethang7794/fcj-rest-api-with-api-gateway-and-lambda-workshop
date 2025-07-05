@@ -1,70 +1,70 @@
 ---
-title: "Integrate /users/{userId} - GET method with get-user"
+title: "Tích hợp phương thức GET /users/{userId} với get-user"
 weight: 3
 chapter: false
 pre: " <b> 4.3. </b> "
 ---
 
-1. Go back to the _Resources_ section of the `UsersAPI` API in API Gateway console.
-2. Select `/users` resource.
-3. Click `Create resource`.
+1. Quay lại phần _Resources_ của API `UsersAPI` trong bảng điều khiển API Gateway.
+1. Chọn tài nguyên `/users`.
+1. Nhấp vào `Create resource`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId--create-resource.jpg)
 
-4. In the `Create resource` page:
-   - For `Resource path`: Choose `/users`
-   - For `Resource name`: Fill in `{userId}`.
+1. Trong trang `Create resource`:
+   - Tại `Resource path`: Chọn `/users`
+   - Tại `Resource name`: Nhập `{userId}`.
 
      > [!NOTE]
-     > Be aware of the two brackets: `{` and `}`.
+     > Lưu ý hai dấu ngoặc nhọn: `{` và `}`.
 
-   - Click `Create resource`.
+   - Nhấp vào `Create resource`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId--create-resource-detail.jpg)
 
-5. Click on the `/users/{userId}` resource you've just created.
-6. Click `Create method`.
+1. Nhấp vào tài nguyên `/users/{userId}` bạn vừa tạo.
+1. Nhấp vào `Create method`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--create-method.jpg)
 
-7. In the `Create method` page', `Method details` section:
-   - `Method type`: Select `GET`.
-   - Integration type: Keep Lambda function.
-   - Lambda function: Choose the `get-user` function.
+1. Trong trang `Create method`, phần `Method details`:
+   - `Method type`: Chọn `GET`.
+   - Integration type: Giữ nguyên Lambda function.
+   - Lambda function: Chọn hàm `get-user`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--create-method-detail.jpg)
 
-8. Keep other settings as default.
-   - Scroll to the bottom and click `Create method`.
+1. Giữ nguyên các cài đặt khác.
+   - Cuộn xuống dưới và nhấp vào `Create method`.
 
-9. You will be redirect to the detail of the `/users/{userId} - GET` method.
+1. Bạn sẽ được chuyển hướng đến trang chi tiết của phương thức `/users/{userId} - GET`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--method-detail.jpg)
 
-10. Open the `Integration request` tab.
-11. In the `Integration request settings` section, click `Edit`.
+1. Mở tab `Integration request`.
+1. Trong phần `Integration request settings`, nhấp vào `Edit`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request.jpg)
 
-12. In the `Edit integration request` page:
+1. Trong trang `Edit integration request`:
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request-detail.jpg)
 
-13. Expand the `URL path parameters` section, click `Add path parameter`.
+1. Mở rộng phần `URL path parameters`, nhấp vào `Add path parameter`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--URL-path-parameters.png)
 
-- `Name`: Fill in `userId`.
-- `Mapped from`: Fill in `method.request.path.userId`.
+- `Name`: Nhập `userId`.
+- `Mapped from`: Nhập `method.request.path.userId`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--URL-path-parameters--userId.png)
 
-14. Expand the `Mapping templates` section, click `Add mapping template`.
+1. Mở rộng phần `Mapping templates`, nhấp vào `Add mapping template`.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--mapping-template.png)
 
-- `Content type`: Fill in `application/json`.
-- `Template body`: Fill in:
+- `Content type`: Nhập `application/json`.
+- `Template body`: Nhập:
 
   ```json
   {
@@ -74,4 +74,4 @@ pre: " <b> 4.3. </b> "
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--mapping-template-body.png)
 
-15. Scroll to the bottom, click `Save`.
+1. Cuộn xuống dưới, nhấp vào `Save`.

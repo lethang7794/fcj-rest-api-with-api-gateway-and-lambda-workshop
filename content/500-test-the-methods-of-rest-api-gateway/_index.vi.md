@@ -1,32 +1,32 @@
 ---
-title: "Test methods of REST API Gateway"
+title: "Kiểm tra các phương thức của REST API Gateway"
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
 
-In this section, we'll test our REST API Gateway endpoints using the AWS Management Console. The console provides a user-friendly interface to verify each endpoint's functionality before deploying to a stage.
+Trong phần này, chúng ta sẽ kiểm tra các endpoint của REST API Gateway bằng cách sử dụng AWS Management Console. Giao diện điều khiển cung cấp một giao diện thân thiện để xác minh chức năng của từng endpoint trước khi triển khai lên một môi trường (stage).
 
-## Testing Process
+## Quy trình kiểm tra
 
-1. **Access the Test tab of each API resource - method**
-   - Navigate to API Gateway in AWS Console
-   - Select your API and the desired resource/method
-   - Open the Test tab
+1. **Truy cập tab Test của từng tài nguyên - phương thức API**
+   - Điều hướng đến API Gateway trong AWS Console
+   - Chọn API và tài nguyên/phương thức mong muốn
+   - Mở tab Test
 
-2. **Test each resource - method**
+2. **Kiểm tra từng tài nguyên - phương thức**
 
-   | API Resource - Method    | Lambda Function | Test requirement                             |
-   | ------------------------ | --------------- | -------------------------------------------- |
-   | `/users          GET`    | `list-users`    | Return all users from the                    |
-   | `/users          POST`   | `create-user`   | A new user is added to the system            |
-   | `/users/{userId} GET`    | `get-user`      | Return detail of a specific user             |
-   | `/users/{userId} PATCH`  | `update-user`   | The user detail is updated with the new data |
-   | `/users/{userId} DELETE` | `delete-user`   | The user is removed from the system          |
+   | Tài nguyên API - Phương thức | Hàm Lambda    | Yêu cầu kiểm tra                             |
+   | --------------------------- | ------------- | -------------------------------------------- |
+   | `/users          GET`       | `list-users`  | Trả về tất cả người dùng từ hệ thống         |
+   | `/users          POST`      | `create-user` | Thêm người dùng mới vào hệ thống             |
+   | `/users/{userId} GET`       | `get-user`    | Trả về chi tiết của một người dùng cụ thể    |
+   | `/users/{userId} PATCH`     | `update-user` | Cập nhật thông tin người dùng với dữ liệu mới|
+   | `/users/{userId} DELETE`    | `delete-user` | Xóa người dùng khỏi hệ thống                 |
 
-3. **Verify Responses**
-   - Check HTTP status codes
-   - Validate response payloads
-   - [Optional] Review CloudWatch logs for Lambda execution details
+3. **Xác minh phản hồi**
+   - Kiểm tra mã trạng thái HTTP
+   - Xác thực nội dung phản hồi
+   - [Tùy chọn] Xem lại nhật ký CloudWatch để biết chi tiết thực thi Lambda
 
-The Management Console's test feature allows you to quickly validate your API without needing to deploy it to a stage, making it ideal for development and debugging.
+Tính năng kiểm tra của Management Console cho phép bạn nhanh chóng xác thực API mà không cần triển khai lên môi trường (stage), rất lý tưởng cho việc phát triển và gỡ lỗi.

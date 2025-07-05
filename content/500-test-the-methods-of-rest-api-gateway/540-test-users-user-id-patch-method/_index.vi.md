@@ -1,18 +1,18 @@
 ---
-title: "Test /users/{userId} - PATCH method"
+title: "Kiểm tra phương thức PATCH /users/{userId}"
 weight: 4
 chapter: false
 pre: " <b> 5.4. </b> "
 ---
 
-1. In the _Resources_ section of the `UsersAPI`.
-2. Under `/users` resource's `{userId}` resource, select `POST` method.
+1. Trong phần _Resources_ của `UsersAPI`.
+1. Dưới tài nguyên `{userId}` của tài nguyên `/users`, chọn phương thức `POST`.
 
-3. Open the `Test` tab.
-4. In the Request body field, fill in:
+1. Mở tab `Test`.
+1. Trong trường Request body, nhập:
 
    > [!NOTE]
-   > Replace the id value with the id of user created in previous step.
+   > Thay thế giá trị id bằng id của người dùng đã tạo ở bước trước.
 
    ```json
    {
@@ -24,8 +24,8 @@ pre: " <b> 5.4. </b> "
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--test-request.jpg)
 
-5. Click `Test`.
+1. Nhấp vào `Test`.
 
-6. Verify that the `update-user` Lambda function is invoked successfully, and the response is the data of updated user.
+1. Xác minh rằng hàm Lambda `update-user` được gọi thành công và phản hồi là dữ liệu của người dùng đã được cập nhật.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-PATCH-method--test-results.jpg)
