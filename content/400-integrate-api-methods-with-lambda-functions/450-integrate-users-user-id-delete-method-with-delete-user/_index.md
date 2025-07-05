@@ -1,8 +1,8 @@
 ---
 title: "Integrate /users/{userId} - DELETE method with delete-user"
-weight: 9
+weight: 5
 chapter: false
-pre: " <b> 4.9 </b> "
+pre: " <b> 4.5 </b> "
 ---
 
 1. Go back to the _Resources_ section of the `UsersAPI` API in API Gateway console.

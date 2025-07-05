@@ -1,8 +1,8 @@
 ---
 title: "Integrate /users/{userId} - GET method with get-user"
-weight: 5
+weight: 3
 chapter: false
-pre: " <b> 4.5 </b> "
+pre: " <b> 4.3 </b> "
 ---
 
 1. Go back to the _Resources_ section of the `UsersAPI` API in API Gateway console.
@@ -27,11 +27,10 @@ pre: " <b> 4.5 </b> "
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--create-method.jpg)
 
-7. In the `Create method` page':
-   - In `Method details` section:
-     - `Method type`: Select `GET`.
-     - Integration type: Keep Lambda function.
-     - Lambda function: Choose the `get-user` function.
+7. In the `Create method` page', `Method details` section:
+   - `Method type`: Select `GET`.
+   - Integration type: Keep Lambda function.
+   - Lambda function: Choose the `get-user` function.
 
 ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--create-method-detail.jpg)
 
@@ -49,27 +48,30 @@ pre: " <b> 4.5 </b> "
 
 12. In the `Edit integration request` page:
 
-    ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request-detail.jpg)
-    - Expand the `URL path parameters` section, click `Add path parameter`.
+![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request-detail.jpg)
 
-      ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--URL-path-parameters.png)
-      - `Name`: Fill in `userId`.
-      - `Mapped from`: Fill in `method.request.path.userId`.
+13. Expand the `URL path parameters` section, click `Add path parameter`.
 
-      ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--URL-path-parameters--userId.png)
+![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--URL-path-parameters.png)
 
-    - Expand the `Mapping templates` section, click `Add mapping template`.
+- `Name`: Fill in `userId`.
+- `Mapped from`: Fill in `method.request.path.userId`.
 
-      ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--mapping-template.png)
-      - `Content type`: Fill in `application/json`.
-      - `Template body`: Fill in:
+![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--URL-path-parameters--userId.png)
 
-        ```json
-        {
-          "id": "$input.params('userId')"
-        }
-        ```
+14. Expand the `Mapping templates` section, click `Add mapping template`.
 
-      ![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--mapping-template-body.png)
+![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--mapping-template.png)
 
-    - Scroll to the bottom, click `Save`.
+- `Content type`: Fill in `application/json`.
+- `Template body`: Fill in:
+
+  ```json
+  {
+    "id": "$input.params('userId')"
+  }
+  ```
+
+![alt text](/images/workshop-2/API-Gateway--users-userId-GET-method--integration-request--mapping-template-body.png)
+
+15. Scroll to the bottom, click `Save`.

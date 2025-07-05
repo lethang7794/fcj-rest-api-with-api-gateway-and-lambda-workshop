@@ -9,7 +9,7 @@ Before starting this workshop, you need:
 
 1. An IAM user with `AdministratorAccess` permissions that you can login with to AWS Management Console.
 
-![alt text](/images/workshop-2/IAM-user-login-and-permissions.png)
+   ![alt text](/images/workshop-2/IAM-user-login-and-permissions.png)
 
    If you haven't create an IAM user, follow [Create IAM Group and IAM User :: MANAGING ACCESS CONTROL WITH AWS IAM (IDENTITY AND ACCESS MANAGEMENT)](https://000002.awsstudygroup.com/2-create-admin-user-and-group/) to create one.
 
